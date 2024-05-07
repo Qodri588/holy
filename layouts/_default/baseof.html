@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+<script>
+window.addEventListener('load', () => {
+  quicklink.listen();
+});
+</script>
+</head>
+<body>
+  <div class="holy-grail-flexbox">
+  <header class="header" id="header">
+    {{ partial "header.html" . }}
+  </header>
+  <main class="main-content">
+
+    {{ block "main" . }}{{ end }}
+  </main>
+  <section class="left-sidebar">
+    {{ partial "sidebar" . }}
+  </section>
+  <aside class="right-sidebar">
+    {{ partial "right-sidebar" . }}
+  </aside>
+  <footer class="footer">
+    {{ partial "footer.html" . }}
+  </footer>
+  </div>
+</body>
+</html>

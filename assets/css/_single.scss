@@ -1,0 +1,228 @@
+$bread-color: #607274;
+
+.content-page{
+  line-height: 2;
+  a{
+  text-decoration: none $theme 2px;
+  color: $theme;
+  }
+}
+.content-page ol li, content-page ul li{
+  line-height: 1.8;
+  margin-bottom: 5px;
+}
+main{
+  padding :1em;
+
+}
+main h1{
+  //border-bottom: 0.9px silver solid;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  
+}
+.info-page1{
+  margin: 1em 0;
+  color: $bread-color;
+  font-size: 12px;
+  justify-items: center;
+}
+
+
+
+.breadcrumb{
+  border-bottom: 3px dotted $theme;
+  margin-top:0.5em;
+  color: $bread-color;
+  padding: 0;
+  margin: 0;
+  a{
+    color :$bread-color;
+    font-size: 12px;
+    line-height: 1 ;
+    margin: 0;
+  }
+}
+.breadcrumb ol {
+  padding-left: 0;
+  line-height: 1;
+}
+
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: "/";
+}
+
+
+/* Style untuk container tag dengan flexbox */
+.tags {
+  display: flex; /* Menggunakan flexbox untuk menyusun item secara sejajar */
+  align-items: center; /* Menyelaraskan item secara vertikal */
+
+}
+
+/* Style untuk judul label */
+#tags {
+  width: 3rem;
+}
+
+/* Style untuk daftar tag */
+#ul-tags ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Menampilkan tag secara sejajar */
+  flex-wrap: wrap; /* Memungkinkan tag bungkus ke baris berikutnya jika tidak muat */
+  margin: 0; /* Menghilangkan margin default */
+}
+
+/* Style untuk setiap item tag */
+#ul-tags li {
+  margin-right: 10px; /* Menambahkan margin kanan */
+}
+
+/* Style untuk link tag */
+#ul-tags li a {
+  text-decoration: none;
+  color: white;
+  padding: 3px 6px;
+  background-color: $theme;
+  //border-radius: 8px;
+  font-size: 12px;
+}
+
+/* Style untuk link tag saat di-hover */
+#ul-tags li a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+
+.latestpost{
+  padding: 0;
+  margin-left:1em;
+}
+
+.latestpost li{
+    margin-bottom: 3px; 
+    padding-top:3px; 
+  //border-bottom: 0.5px silver solid;
+    padding-bottom: 3px;
+    color: #333;
+    a{
+      color:black;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  
+  }
+
+
+.related ul{
+  margin-left: 2em;
+  margin-right: 2em;
+  padding:0;
+}
+.related ul li{
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-transform: capitalize;
+  .time{
+    font-weight: 400;
+    font-size: 12px;
+    color:$bread-color;
+  }
+}
+
+
+.right-sidebar ol{
+  padding:0;
+  margin-left: 2em;
+  margin-right: 2em;
+  li{
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+}
+
+
+.h3-side{
+  
+  padding:15px 0;
+  //background-color: $theme;
+  border-bottom: 3px dotted $theme;
+  color: black;
+}
+
+/* next-prev.html */
+.next-prev{
+  margin-top: 3em;
+  margin-bottom: 1em;
+  display: flex;
+  column-gap: 0.4em;
+  div{
+    width: 50%;
+    font-weight: 500;
+    //padding : 0.5em;
+  }
+}
+.next-post{
+  text-align: left;
+  a{
+    color: $theme;
+  }
+}
+.next-post .next{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+.previous-post{
+  text-align: right;
+  a{
+    color: $theme;
+  }
+}
+.previous-post .prev{
+  width: 100%;
+  text-align: right;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  justify-content: center;
+  margin-top:3em;
+}
+
+.page-item {
+  margin-right: 5px;
+}
+
+.page-link {
+  color: $theme;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 2.5px solid $theme;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.page-link:hover {
+  background-color: #f5f5f5;
+}
+
+.page-item.active .page-link {
+  background-color: $theme;
+  color: #fff;
+  border-color: $theme;
+}

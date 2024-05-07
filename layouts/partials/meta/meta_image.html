@@ -1,0 +1,11 @@
+{{ with .Params.image }}
+  <meta itemprop="image" content="{{ . | absURL }}" />
+  <meta property="og:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image:src" content="{{ . | absURL }}" />
+{{ else }}
+  <meta itemprop="image" content="{{ .Site.Params.og_image | absURL }}" />
+  <meta property="og:image" content="{{ .Site.Params.og_image | absURL }}" />
+  <meta name="twitter:image" content="{{ .Site.Params.og_image | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Site.Params.og_image | absURL }}" />
+{{ end }}

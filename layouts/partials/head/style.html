@@ -1,0 +1,5 @@
+<!-- critical css should be here -->
+{{ with resources.Get "css/style.scss" | toCSS }}
+<style>{{ .Content | safeCSS }}</style>
+{{ end }}
+`	

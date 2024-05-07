@@ -1,0 +1,120 @@
+// Atur variabel untuk font Inter
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* Variabel untuk font family */
+$font-family: 'Inter', sans-serif;
+
+/* Variabel untuk ukuran font */
+$font-size-base: 16px;
+$font-size-h1: 2.25rem;
+$font-size-h2: 1.75rem;
+$font-size-h3: 1.5rem;
+$font-size-h4: 1.25rem;
+$font-size-h5: 1rem;
+$font-size-h6: .75rem;
+
+/* Variabel untuk line height */
+$line-height-base: 1.6;
+
+/* Mixin untuk tipografi heading */
+@mixin heading($size, $weight) {
+  font-family: $font-family;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height-base;
+}
+
+/* Tipografi heading */
+h1 {
+  @include heading($font-size-h1, bold);
+}
+
+h2 {
+  @include heading($font-size-h2, bold);
+}
+
+h3 {
+  @include heading($font-size-h3, bold);
+}
+
+h4 {
+  @include heading($font-size-h4, bold);
+}
+
+h5 {
+  @include heading($font-size-h5, bold);
+}
+
+h6 {
+  @include heading($font-size-h6, bold);
+}
+
+/* Tipografi body */
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: #333;
+  margin: 0;
+  
+}
+
+/* Tipografi paragraf */
+p {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+/* Tipografi link */
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Tipografi daftar */
+ul,
+ol {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: .5rem;
+}
+
+/* Tipografi blockquote */
+blockquote {
+  font-style: italic;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: 1px solid #eee;
+}
+
+/* Tipografi code */
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f8f8f8;
+  padding: 2px 4px;
+}
+
+/* Tipografi pre */
+pre {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f8f8f8;
+  padding: 10px;
+  overflow: auto;
+}
+
+    
+
+  
+

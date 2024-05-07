@@ -1,0 +1,86 @@
+$color: #F5F7F8;
+$svg-color : $theme;
+$boder: #61677A;
+
+.resp-sharing-button__link,
+.resp-sharing-button__icon {
+  display: inline-block
+}
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: $main-color;
+  margin: 0.5em
+}
+
+.resp-sharing-button {
+  border-radius: 15px;
+  transition: 25ms ease-out;
+  padding: 0.5em 0.75em;
+}
+
+.resp-sharing-button__icon svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  vertical-align: top
+}
+
+.resp-sharing-button--small svg {
+  margin: 0;
+  vertical-align: middle
+}
+
+/* Non solid icons get a stroke */
+.resp-sharing-button__icon {
+  stroke: $main-color;
+  
+  fill: none
+}
+
+/* Solid icons get a fill */
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+  fill: $main-color;
+  stroke: none
+}
+
+.resp-sharing-button--twitter {
+  background-color: $svg-color
+}
+
+.resp-sharing-button--pinterest {
+  background-color: $svg-color;
+}
+
+.resp-sharing-button--facebook {
+  background-color: $svg-color;
+}
+
+.resp-sharing-button--whatsapp {
+  background-color: $svg-color;
+}
+
+.resp-sharing-button--facebook {
+  background-color: $svg-color;
+  
+}
+
+.resp-sharing-button--twitter {
+  background-color: $svg-color;
+  
+}
+
+.resp-sharing-button--pinterest {
+  background-color: $svg-color;
+  
+}
+
+.resp-sharing-button--whatsapp {
+  background-color: $svg-color;
+  
+}
+
+.resp-sharing-button--telegram {
+  background-color: $svg-color;
+}

@@ -1,0 +1,16 @@
+<div id="pagination"class="next-prev">
+<div class="next-post">
+	{{ if .NextPage }}
+	
+	<div class="next">Next Post</div>
+	<a class="link-reverse" href="{{ .NextPage.Permalink }}?ref=footer"> {{ .NextPage.Title | truncate 50 "..." }}</a>
+	{{ end }}
+</div>
+
+<div id="pagination" class="previous-post">
+	{{ if .PrevPage }}
+		<div class="prev">Previous Post</div>
+	<a class="link-reverse" href="{{ .PrevPage.Permalink }}?ref=footer">{{ .PrevPage.Title | truncate 50 "..."}} </a>
+	{{ end }}
+</div>
+</div>

@@ -1,0 +1,10 @@
+<div class="right-sidebar">
+  <div class="h3-side">
+<h3>NEW POST</h3>
+</div>
+<ol>
+	{{ range first 5 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+	{{ end }}
+</ol>
+</div>

@@ -1,0 +1,99 @@
+// Import font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+// Variabel dasar
+$base-font: 'Inter', sans-serif;
+$font-size: 15px;
+$line-height: 20px;
+$text-color: #45474B;
+$background-color: #F5F7F8;
+$link-color: #333;
+
+// Variabel elemen
+$heading-weight: 600;
+$heading-line: 1.2;
+$image-width: 100%;
+$radius: 5px;
+$pre-code-padding: 10px;
+$code-padding: 3px 5px;
+$table-border-width: 1px;
+$table-border-color: #ddd;
+$table-padding: 8px;
+$paragraph-margin: 2em;
+
+// Gaya dasar
+body {
+  font: #{$font-size} / #{$line-height} $base-font;
+  color: $text-color;
+  background-color: $background-color;
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    max-width: $image-width;
+    height: auto;
+    padding: 0;
+    margin: auto;
+  }
+
+  pre, code {
+    background-color: #f8f9fa;
+    border-radius: $radius;
+    padding: $pre-code-padding $code-padding;
+  }
+
+  pre {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+
+    th, td {
+      border: $table-border-width solid $table-border-color;
+      padding: $table-padding;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  }
+
+  p {
+    margin-bottom: $paragraph-margin;
+  }
+}
+
+// Judul
+@each $heading, $size in (
+  h1: 2.2rem,
+  h2: 1.9rem,
+  h3: 1.8rem,
+  h4: 1.5rem,
+  h5: 1.4rem
+) {
+  #{$heading} {
+    font-size: $size - (0.8rem);
+    line-height: $heading-line;
+    font-weight: $heading-weight;
+  }
+}
+
+// Breakpoint (not implemented yet)
+// @media (min-width: $mobile-breakpoint) {
+//   // Desktop styling here
+// }
+
+article {
+  font-size: $font-size;
+}

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article>
+  {{ partial "bread" . }}
+  <h1>{{ .Title }}</h1>
+  {{ partial "share" . }}
+ 
+  <div class="info-page1">
+By {{ .Params.author }}  •  {{ .WordCount }} Word  •  <time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+  </div>
+  <div class="content-page">{{ .Content }}</div>
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+</article>
+{{ partial "next-prev" . }}
+{{ end }}

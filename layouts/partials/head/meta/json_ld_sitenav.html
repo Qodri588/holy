@@ -1,0 +1,56 @@
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@graph": 
+	[
+      {
+          "@context": "https://schema.org",
+          "@type":"SiteNavigationElement",
+          "@id":"#header",
+          "name": "{{ .Title }}",
+          "url": "{{ .baseURL }}"
+      },
+      {
+          "@context": "https://schema.org",
+          "@type":"SiteNavigationElement",
+          "@id":"#header",
+          "name": "{{ .Site.Params.menu1}}",
+          "url": "{{ .Site.Params.menu1link | absURL }}"
+      },
+      {
+          "@context": "https://schema.org",
+          "@type":"SiteNavigationElement",
+          "@id":"#header",
+          "name": "{{ .Site.Params.menu2 }}",
+          "url": "{{ .Site.Params.menu2 | absURL }}"
+      },
+      {
+          "@context": "https://schema.org",
+          "@type":"SiteNavigationElement",
+          "@id":"#header",
+          "name": "{{ .Site.Params.menu2 }}",
+          "url": "{{ .Site.Params.menu2 | absURL }}"
+      }
+      	{{ if .NextPage }}
+      ,
+      {
+          "@context": "https://schema.org",
+          "@type":"SiteNavigationElement",
+          "@id":"#pagination",
+          "name": "Previous page",
+          "url": "{{ .NextPage.Permalink }}"
+      },
+      {{ end }}
+      
+      {{ if .PrevPage }}
+      {
+          "@context": "https://schema.org",
+          "@type":"SiteNavigationElement",
+          "@id":"#pagination",
+          "name": "Next page",
+          "url": "{{ .PrevPage.Permalink }}"
+      }
+      {{ end }}
+	]
+}
+</script>

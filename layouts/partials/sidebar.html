@@ -1,0 +1,24 @@
+<div class="profile">
+  
+</div>
+
+
+
+{{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+<div class="related">
+<div class="h3-side">
+<h3>RELATED POST</h3>
+</div>
+<ul>
+ {{ range . }}
+  <li>
+   <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+   <div class="time">
+     {{ .Params.author }}  -  <time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+   </div>
+  </li>
+ {{ end }}
+</ul>
+</div>
+{{ end }}

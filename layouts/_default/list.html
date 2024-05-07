@@ -1,0 +1,17 @@
+
+{{ define "main" }}
+  <h1 class="home">{{ .Title }}</h1>
+  {{ .Content }}
+{{ $pages := where .Site.RegularPages "Section" "posts" }}
+{{ $pages = $pages.ByTitle }}
+{{ range (.Paginate $pages 5).Pages }}
+  <article class="list-tags">
+    <h2><a href="{{ .RelPermalink | absURL}}">{{ .LinkTitle }}</a></h2>
+    <div class="info-list">
+      {{ .Params.author }} - <time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02 January 2006" }}</time>
+    </div>
+    {{ .Summary }}
+  </article>
+  {{ end }}
+  {{ template "_internal/pagination.html" . }}
+{{ end }}
