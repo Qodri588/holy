@@ -1,7 +1,7 @@
 baseURL: /
 languageCode: en-us
 title: My
-summaryLength: 15
+
 params:
   copyright: "copy"
   description: "description test"
@@ -19,5 +19,5 @@ menus:
       weight: 30
 module:
   hugoVersion:
-    extended: false
+    extended: true
     min: 0.116.0

@@ -7,7 +7,12 @@
     <div class="info-list">
       {{ .Params.author }} - <time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02 January 2006" }}</time>
     </div>
-    {{ .Summary }}
+    {{ if gt (len .Summary) 100 }}
+      {{ slicestr .Summary 0 100 }}...
+    {{ else }}
+      {{ .Summary }}...
+    {{ end }}
+
     </article>
   {{ end }}
     {{ template "_internal/pagination.html" . }}

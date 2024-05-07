@@ -1,14 +1,9 @@
-<div class="profile">
-  
-</div>
-
-
 
 {{ $related := .Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
 <div class="related">
 <div class="h3-side">
-<h3>RELATED POST</h3>
+<h3>POSTINGAN TERKAIT</h3>
 </div>
 <ul>
  {{ range . }}
@@ -20,5 +15,5 @@
   </li>
  {{ end }}
 </ul>
-</div>
+</d>
 {{ end }}

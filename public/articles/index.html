@@ -299,80 +299,60 @@ main h1 {
   background-color: #007bff;
   color: white; }
 
-.latestpost {
-  padding: 0;
-  margin-left: 1em; }
-
-.latestpost li {
-  margin-bottom: 3px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  color: #333; }
-  .latestpost li a {
-    color: black;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: capitalize; }
-
-.related ul {
-  margin-left: 2em;
-  margin-right: 2em;
+.related {
   padding: 0; }
 
-.related ul li {
-  margin-bottom: 5px;
-  font-weight: 500;
-  text-transform: capitalize; }
-  .related ul li .time {
-    font-weight: 400;
-    font-size: 12px;
-    color: #607274; }
-
-.right-sidebar ol {
+.related ul {
   padding: 0;
-  margin-left: 2em;
-  margin-right: 2em; }
-  .right-sidebar ol li {
-    margin-bottom: 5px;
+  list-style: none;
+  margin-bottom: 2rem; }
+
+.related ul li {
+  font-weight: 500;
+  text-transform: capitalize;
+  padding-bottom: 1em; }
+  .related ul li .time {
     font-weight: 500;
-    text-transform: capitalize; }
+    font-size: 11px;
+    color: #0A6847; }
+
+.related ul li:last-child {
+  border-bottom: none; }
+
+.related ul li a {
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
 .h3-side {
-  padding: 15px 0;
-  border-bottom: 3px dotted #0A6847;
-  color: black; }
+  margin-top: 0.5em;
+  padding: 0em;
+  border-bottom: 4px solid #0A6847;
+  color: #0A6847;
+  text-align: left; }
 
 /* next-prev.html */
 .next-prev {
-  margin-top: 3em;
-  margin-bottom: 1em;
+  padding: 3rem 0;
   display: flex;
-  column-gap: 0.4em; }
-  .next-prev div {
+  column-gap: 0.5em; }
+  .next-prev > div {
     width: 50%;
     font-weight: 500; }
 
 .next-post {
   text-align: left; }
-  .next-post a {
-    color: #0A6847; }
-
-.next-post .next {
-  width: 100%;
-  text-align: left;
-  margin-bottom: 0.5em;
-  font-weight: 600; }
 
 .previous-post {
   text-align: right; }
-  .previous-post a {
-    color: #0A6847; }
 
-.previous-post .prev {
-  width: 100%;
-  text-align: right;
-  margin-bottom: 0.5em;
-  font-weight: 600; }
+.next-post a,
+.previous-post a {
+  color: #0A6847; }
+
+.next-post .title,
+.previous-post .title {
+  font-weight: 600;
+  margin-bottom: 0.5em; }
 
 .pagination {
   display: flex;
@@ -402,7 +382,6 @@ main h1 {
 
 /* Menambahkan gaya dasar untuk navbar */
 footer {
-  border-top: 4px #0A6847 dotted;
   text-align: center;
   font-size: 13; }
   footer div {
@@ -582,32 +561,24 @@ select {
 
 .list-article {
   padding-bottom: 1em;
-  padding-top: 1em;
-  border-bottom: 4px dotted #0A6847; }
-  .list-article .list-article :last-child {
-    color: red; }
+  padding-top: 1em; }
+
+.list-article h1, .list-article h2 {
+  margin: 0;
+  padding-block: 0; }
 
 .list-article h1, .list-article h2, .list-article h3 {
   text-transform: capitalize; }
 
 .info-list {
   font-size: 12px;
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
-  color: #607274; }
-
-.list-tags {
-  padding-bottom: 1em;
-  padding-top: 1em; }
-
-.list-tags::last-child {
-  border-bottom: none; }
-
-.home {
-  padding-top: 1em; }
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: #0A6847;
+  font-weight: 500; }
 </style>
 
-`	
+
 
 
       <script src="/js/main.js"></script>
@@ -638,44 +609,49 @@ select {
 
 
 
-  <article class="list-tags">
+  <article class="list-aricle">
     <h2><a href="//localhost:1313/posts/176-bagaimana-menyiapkan-nasi-uduk-dan-pelengkapnya-yang-enak-banget/">Bagaimana Menyiapkan Nasi uduk dan pelengkapnya yang Enak Banget</a></h2>
     <div class="info-list">
       Cordelia Wood - <time datetime="2021-12-30T03:11:35">30 December 2021</time>
     </div>
     Resep rahasia dan cara memasak Nasi uduk dan pelengkapnya cocok banget jika digunakan untuk menjamu teman
+Bahan-bahan Yang Diperlukan Dalam Menyiapkan Nasi uduk dan pelengkapnya: Semua ada dilampiran ya Silahkan di klik Penyajian nasi kuning cukup beragam, yang paling umum adalah membentuknya dengan bentuk cone atau yang biasa. Semua ada dilampiran ya. silahkan di klik. Resep nasi uduk ada di (lihat resep). Nasi uduk khas betawi terkenal dengan bumbu rempah, kini dapat anda sajika di rumah dengan pelengkap lauk yang komplit dan spesial.
   </article>
   
-  <article class="list-tags">
+  <article class="list-aricle">
     <h2><a href="//localhost:1313/posts/179-cara-gampang-membuat-nasi-uduk-menggugah-selera/">Cara Gampang Membuat Nasi Uduk 🇮🇩, Menggugah Selera</a></h2>
     <div class="info-list">
       Harvey Black - <time datetime="2021-11-16T17:26:08">16 November 2021</time>
     </div>
     Resep Nasi Uduk 🇮🇩 dengan 6 langkahmudah cocok banget jika digunakan untuk menjamu tamu
+Beberapa Bahan Yang Diperlukan Untuk Pembuatan Nasi Uduk 🇮🇩: beras putih 1,8 Kg serai geprek 2 batang lengkuas iris lalu geprek 1 ruas santan 200 ml daun salam 4-5 royco sapi 1 bungkus Minyak goreng Bumbu ulekan bawang putih 3 siung bawang merah 10 siung kencur 2 ruas kemiri 2 sdm garam 1 sdm Langkah-langkah Untuk Membuat Nasi Uduk 🇮🇩: Ulek semua bahan di bawah ini hingga halus Panaskan minyak lalu tumis hingga wangi.
   </article>
   
-  <article class="list-tags">
+  <article class="list-aricle">
     <h2><a href="//localhost:1313/posts/178-cara-gampang-membuat-nasi-uduk-magicom-menggugah-selera/">Cara Gampang Membuat Nasi uduk magicom, Menggugah Selera</a></h2>
     <div class="info-list">
       Jesus Pierce - <time datetime="2021-11-01T00:51:17">01 November 2021</time>
     </div>
     Resep Nasi uduk magicom dengan 2 langkahcepat dan mudah cocok sekali jika digunakan untuk menjamu teman
+Beberapa Bahan Yang Dibutuhkan Dalam Pembuatan Nasi uduk magicom: beras 1 kg daun salam 3 lembar lengkuas digeprek 2 ruas serai digeprek 2 batang santan bubuk 1 sdm Ryko Bumbu halus bawang merah 5 bawang putih 4 kencur bisa skip 1 ruas garam 1 sdt Dari bahan - bumbu nasi uduk betawi istimewa hingga, detail cara membuat nasi uduk spesial untuk jualan / konsumsi pribadi yang paling enak dan gurih.
   </article>
   
-  <article class="list-tags">
+  <article class="list-aricle">
     <h2><a href="//localhost:1313/posts/177-cara-gampang-menyiapkan-nasi-uduk-merah-putih-anti-gagal/">Cara Gampang Menyiapkan Nasi uduk merah putih 🇮🇩 Anti Gagal</a></h2>
     <div class="info-list">
       Belle Wheeler - <time datetime="2021-11-01T10:18:51">01 November 2021</time>
     </div>
     Resep rahasia Nasi uduk merah putih 🇮🇩 sederhana dengan 4 langkahcepat cocok banget jika digunakan untuk menjamu tamu
+Beberapa Bahan Yang Dibutuhkan Dalam Pembuatan Nasi uduk merah putih 🇮🇩: Nasi uduk putih beras putih 1 cup santan instan 65ml 1 bks Air secukupnya daun salam 1 lembar daun pandan 1 lembar garam 1 sdt Nasi uduk secang kayu secang 1 genggam air 300 ml beras 1 cup santan instan 65ml 1 bks daun salam 1 lembar daun pandan 1 lembar garam 1 sdt Pelengkap Mie goreng Ayam gorengoporbakar Telur bumbu bali Sambel goreng kentang Urapan sayur Nasi uduk memiliki cita rasa yang enak, dilengkapi dengan lauk-pauk yang Nasi uduk yang berasal dari Betawi sangat terkenal, meskipun berwarna putih akan tetapi butiran nasi tidak lengket bahkan proses memasaknya menggunakan.
   </article>
   
-  <article class="list-tags">
+  <article class="list-aricle">
     <h2><a href="//localhost:1313/posts/172-langkah-mudah-untuk-membuat-nasi-uduk-rice-cooker-simpel-wangi-yang-lezat/">Langkah Mudah untuk Membuat Nasi uduk rice cooker simpel wangi yang Lezat</a></h2>
     <div class="info-list">
       Nora Rhodes - <time datetime="2021-10-11T23:02:48">11 October 2021</time>
     </div>
     3 langkah cepat membuat Nasi uduk rice cooker simpel wangi cocok banget jika digunakan untuk menjamu teman
+Bahan-bahan Yang Diperlukan Dalam Pembuatan Nasi uduk rice cooker simpel wangi: beras 2,5 cup air 2-3 gelas santan kara 1 bungkus serai geprek 1 batang garam 1 sdt daun salam 4 lembar daun jeruk 1 lembar minyak goreng 1 sdm daun pandan tambahan dr sy 1 lembar Bumbu halus jahe 1/2 ruas lengkuas 1 ruas kencur 1 ruas bawang putih 4 siung Nasi uduk rice cooker super wangi pulen dan simpel bikinnyaПодробнее.
   </article>
   
   
@@ -702,34 +678,55 @@ select {
 
   </main>
   <section class="left-sidebar">
-    <div class="profile">
-  
-</div>
-
-
-
+    
 
 
   </section>
   <aside class="right-sidebar">
-    <div class="right-sidebar">
+    <div class="related">
   <div class="h3-side">
-<h3>NEW POST</h3>
+    <h3>POSTINGAN TERBARU</h3>
+  </div>
+  <ul>
+    
+      <li>
+        <a href="/articles/67-langkah-mudah-untuk-menyiapkan-nasi-uduk-betawi-anti-gagal/">Langkah Mudah untuk Menyiapkan Nasi Uduk Betawi Anti Gagal</a>
+        <div class="time">
+          Sophia Lowe  -  <time datetime="2022-01-07T07:15:59">07 Jan 2022</time>
+        </div>
+      </li>
+    
+      <li>
+        <a href="/articles/66-langkah-mudah-untuk-membuat-nasi-uduk-betawi-pakai-magiccom-yang-bikin-ngiler/">Langkah Mudah untuk Membuat Nasi Uduk Betawi pakai Magiccom yang Bikin Ngiler</a>
+        <div class="time">
+          Tony Phillips  -  <time datetime="2021-12-31T18:02:51">31 Dec 2021</time>
+        </div>
+      </li>
+    
+      <li>
+        <a href="/articles/72-resep-nasi-uduk-betawi-rempah-lezat-sekali/">Resep Nasi uduk betawi rempah, Lezat Sekali</a>
+        <div class="time">
+          Harry Franklin  -  <time datetime="2021-12-28T19:23:57">28 Dec 2021</time>
+        </div>
+      </li>
+    
+      <li>
+        <a href="/articles/73-resep-nasi-uduk-betawi-ricecooker-enak-gampil-yang-enak-banget/">Resep Nasi Uduk Betawi RiceCooker Enak Gampil yang Enak Banget</a>
+        <div class="time">
+          Evelyn Gardner  -  <time datetime="2021-12-26T06:38:26">26 Dec 2021</time>
+        </div>
+      </li>
+    
+      <li>
+        <a href="/articles/64-langkah-mudah-untuk-menyiapkan-nasi-uduk-betawi-anti-gagal/">Langkah Mudah untuk Menyiapkan Nasi Uduk Betawi Anti Gagal</a>
+        <div class="time">
+          Hettie Chambers  -  <time datetime="2021-12-14T12:20:53">14 Dec 2021</time>
+        </div>
+      </li>
+    
+  </ul>
 </div>
-<ol>
-	
-	<li><a href="/articles/67-langkah-mudah-untuk-menyiapkan-nasi-uduk-betawi-anti-gagal/">Langkah Mudah untuk Menyiapkan Nasi Uduk Betawi Anti Gagal</a></li>
-	
-	<li><a href="/articles/66-langkah-mudah-untuk-membuat-nasi-uduk-betawi-pakai-magiccom-yang-bikin-ngiler/">Langkah Mudah untuk Membuat Nasi Uduk Betawi pakai Magiccom yang Bikin Ngiler</a></li>
-	
-	<li><a href="/articles/72-resep-nasi-uduk-betawi-rempah-lezat-sekali/">Resep Nasi uduk betawi rempah, Lezat Sekali</a></li>
-	
-	<li><a href="/articles/73-resep-nasi-uduk-betawi-ricecooker-enak-gampil-yang-enak-banget/">Resep Nasi Uduk Betawi RiceCooker Enak Gampil yang Enak Banget</a></li>
-	
-	<li><a href="/articles/64-langkah-mudah-untuk-menyiapkan-nasi-uduk-betawi-anti-gagal/">Langkah Mudah untuk Menyiapkan Nasi Uduk Betawi Anti Gagal</a></li>
-	
-</ol>
-</div>
+
   </aside>
   <footer class="footer">
     <div class="footer-menu">

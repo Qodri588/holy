@@ -1,32 +1,21 @@
 .list-article{
   padding-bottom: 1em;
   padding-top:1em;
- border-bottom: 4px dotted $theme;
-.list-article :last-child{
-   color: red;
- }
-  
+ //border-bottom: 4px dotted $theme;
 }
+.list-article h1, .list-article h2{
+  margin: 0;
+  padding-block: 0;
+}
+
 .list-article h1, .list-article h2, .list-article h3, {
   text-transform: capitalize;
 }
 
 .info-list{
   font-size: 12px;
-  margin-top:0.3em;
-  margin-bottom: 0.3em;
-  color: #607274;
-}
-
-.list-tags{
-  padding-bottom: 1em;
-  padding-top:1em;
-  //border-bottom: 4px dotted $theme;
-  
-}
-.list-tags::last-child {
-  border-bottom: none;
-}
-.home{
-  padding-top:1em;
+  padding-top:0.5em;
+  padding-bottom: 0.5em;
+  color: $theme;
+  font-weight: 500;
 }

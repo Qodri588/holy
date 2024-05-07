@@ -100,99 +100,78 @@ main h1{
 }
 
 
-.latestpost{
+.related{
   padding: 0;
-  margin-left:1em;
 }
-
-.latestpost li{
-    margin-bottom: 3px; 
-    padding-top:3px; 
-  //border-bottom: 0.5px silver solid;
-    padding-bottom: 3px;
-    color: #333;
-    a{
-      color:black;
-      font-size: 15px;
-      font-weight: 600;
-      text-transform: capitalize;
-    }
-  
-  }
-
-
 .related ul{
-  margin-left: 2em;
-  margin-right: 2em;
   padding:0;
+  list-style: none;
+  margin-bottom: 2rem;
+  //padding-right: 1em;
+  //padding-left: 1em;
 }
 .related ul li{
-  margin-bottom: 5px;
+  //margin-bottom: 10px;
   font-weight: 500;
   text-transform: capitalize;
+  //padding: 0.3em;
+  padding-bottom: 1em;
+  //border-bottom: $bread-color 1px solid;
   .time{
-    font-weight: 400;
-    font-size: 12px;
-    color:$bread-color;
-  }
-}
-
-
-.right-sidebar ol{
-  padding:0;
-  margin-left: 2em;
-  margin-right: 2em;
-  li{
-    margin-bottom: 5px;
     font-weight: 500;
-    text-transform: capitalize;
+    font-size: 11px;
+    color:$theme;
   }
 }
+.related ul li:last-child{
+    border-bottom: none;
+  }
+.related ul li a{
+  padding-top :5px;
+  padding-bottom: 5px;
+}
+
 
 
 .h3-side{
-  
-  padding:15px 0;
-  //background-color: $theme;
-  border-bottom: 3px dotted $theme;
-  color: black;
+  margin-top: 0.5em;
+  padding:0em;
+ // background-color: grey;
+  border-bottom: 4px solid $theme;
+  color: $theme;
+ // border-radius: 15px;
+ text-align: left;
 }
 
+
 /* next-prev.html */
-.next-prev{
-  margin-top: 3em;
-  margin-bottom: 1em;
+.next-prev {
+  padding: 3rem 0;
   display: flex;
-  column-gap: 0.4em;
-  div{
+  column-gap: 0.5em;
+
+  > div {
     width: 50%;
     font-weight: 500;
-    //padding : 0.5em;
   }
 }
 .next-post{
   text-align: left;
-  a{
-    color: $theme;
-  }
-}
-.next-post .next{
-  width: 100%;
-  text-align: left;
-  margin-bottom: 0.5em;
-  font-weight: 600;
 }
 .previous-post{
   text-align: right;
-  a{
+}
+
+.next-post,
+.previous-post {
+  a {
     color: $theme;
   }
-}
-.previous-post .prev{
-  width: 100%;
-  text-align: right;
-  margin-bottom: 0.5em;
-  font-weight: 600;
+
+  .title {
+    font-weight: 600;
+    margin-bottom: 0.5em;
+  }
 }
 
 
