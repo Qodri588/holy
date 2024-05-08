@@ -2,7 +2,10 @@
 footer{
  //border-top: 4px $theme solid;
   text-align: center;
-  font-size: 13;
+  
+  *{
+    font-size: 13;
+  }
   div{
     margin-bottom: 8px;
   }
