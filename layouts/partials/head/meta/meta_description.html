@@ -1,8 +1,6 @@
 
 
-{{ if  .IsPage }}
-<meta name="description" content="{{ .Params.description }}" />
-<meta itemprop="description" content="{{ .Params.description }}" />
-<meta property="og:description" content="{{ .Params.description }}" />
-<meta name="twitter:description" content="{{ .Params.description }}" />    
-{{ end }}
+<meta name="description" content="{{ or .Params.description .Site.Params.description }}" />
+<meta itemprop="description" content="{{ or .Params.description .Site.Params.description }}" />
+<meta property="og:description" content="{{ or .Params.description .Site.Params.description }}" />
+<meta name="twitter:description" content="{{ or .Params.description .Site.Params.description }}" />    
