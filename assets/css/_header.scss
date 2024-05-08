@@ -8,9 +8,9 @@ footer{
   }
 }
 .nav {
-  display: flex; /* Menggunakan flexbox untuk navbar */
+  display: flex;
   justify-content: space-between; /* Menyebar konten secara merata */
-  align-items: center; /* Menengahkan item secara vertikal */
+  align-items: center;
   background-color: $theme;
   font-weight: 500;
 }
@@ -47,10 +47,11 @@ footer{
   color: white;
   text-align: center;
   text-decoration: none;
+  padding: 10px 0;
 }
 
 /* Mengubah warna link saat di-hover */
 .nav .menu ul li a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: $theme;
+  color: white;
 }

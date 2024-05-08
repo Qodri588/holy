@@ -1,19 +1,12 @@
-.list-article{
-  padding-bottom: 1em;
-  padding-top:1em;
-border-bottom: 4px dotted $theme;
+.article-tags-list {
+  padding: 0.5em 0;
+  margin-top:1.5em;
 }
-.list-article h1, .list-article h2{
-  margin: 0;
-  padding-block: 0;
+.article-tags-list a{
+  padding: 5px 0;
 }
-
-.list-article h1, .list-article h2, .list-article h3, {
-  text-transform: capitalize;
-}
-
 .info-list{
-  font-size: 12px;
+  font-size: 14px;
   padding-top:0.5em;
   padding-bottom: 0.5em;
   color: $theme;
