@@ -205,3 +205,8 @@ main h1{
   color: #fff;
   border-color: $theme;
 }
+
+
+.image-caption { margin: 1rem 0; text-align: center; }
+.image-caption img { display: block; width: 100%; }
+.image-caption figcaption { font-size: 0.8rem; margin-top: 0.5rem; padding: 0.5rem; }
