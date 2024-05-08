@@ -31,7 +31,7 @@ main h1{
 
 
 .breadcrumb{
-  border-bottom: 3px dotted $theme;
+  //border-bottom: 3px dotted $theme;
   margin-top:0.5em;
   color: $bread-color;
   padding: 0;
@@ -53,7 +53,7 @@ main h1{
 }
 
 .breadcrumb li:not(:last-child)::after {
-  content: "/";
+  content: "  /  ";
 }
 
 
@@ -67,6 +67,7 @@ main h1{
 /* Style untuk judul label */
 #tags {
   width: 3rem;
+  
 }
 
 /* Style untuk daftar tag */
@@ -89,7 +90,7 @@ main h1{
   color: white;
   padding: 3px 6px;
   background-color: $theme;
-  //border-radius: 8px;
+  border-radius: 8px;
   font-size: 12px;
 }
 
